@@ -1,0 +1,538 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(lightblue, pink);
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    font-family: 'Monoton';
+    font-size: 8vw;
+    color: yellow;
+    text-align: center;
+    text-decoration-style: double;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+p,
+h3,
+ul {
+    font-family: 'Raleway', 'sans-serif';
+    text-decoration: none;
+    font-size: 4vw;
+    text-align: center;
+}
+
+
+
+/* STYLING AF NAV BAR LÅNT KODE */
+
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 4vw;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+
+/* STYLING AF FORSIDE */
+
+#emilie-overskrift {
+    margin-top: 100px;
+}
+
+#multimediedesigner {
+    font-size: 7vw;
+}
+
+#portfolio-overskrift {
+    margin-bottom: 60px;
+}
+
+
+
+
+/* STYLING AF HVEM ER JEG */
+
+#hvem-overskrift {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+.hvem-er-jeg {
+    margin-top: 20%;
+}
+
+.hvem-er-jeg-tekst {
+    margin-top: 20px;
+    padding: 5%;
+}
+
+.hvem-er-jeg-billede {
+    width: 100%;
+    padding: 10%;
+    justify-content: center;
+}
+
+.kompetencer-container {
+    padding: 10%;
+}
+
+
+.cv {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10%;
+}
+
+
+/* STYLING AF MYFSTVL */
+
+#projekter-overskrift {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 10vw;
+    margin-top: 10%;
+}
+
+
+
+
+
+/* STYLING AF SEAMLESS */
+
+.seamless-flex {
+    margin-top: 40px;
+}
+
+.seamless-tekst-computer {
+    display: none;
+}
+
+.seamless-billede {
+    width: 100%;
+    height: auto; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* STYLING AF KREA */
+
+.krea-flex {
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+
+.my {
+    width: 45%;
+    height: 30%;
+    margin: -5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.my-tekst {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.my-flex-computer {
+    display: none;
+}
+
+
+
+
+/* STYLING AF BILLEDER I GRID */
+
+.festival-grid {
+    display: grid;
+    grid-template-columns: 6% 45% 2% 45% 6%;
+    margin-top: 20px;
+}
+
+.festival-grid img {
+    width: 100%;
+    background-color: white;
+    padding: 2%;
+}
+
+
+.festival-grid div {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roskilde,
+.musik-i-lejet,
+.tinderbox {
+    grid-column: 2 / 2;
+    margin-bottom: 10px;
+}
+
+.northside,
+.smukfest,
+.copenhell {
+    grid-column: 4 / 4;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* STYLING AF BILLEDER LÅNT KODE */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2000;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+
+/* The Close Button */
+
+/* 
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover,
+#close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.billeder-tekst {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+/* STYLING AF FOOTER */
+
+footer {
+    margin-top: 10%;
+    bottom: 0%;
+}
+
+.some-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.some {
+    width: 90%;
+    height: auto;   
+}
+
+.copy {
+    margin-top: 4%;
+}
+
+/*TABLET START*/
+
+@media (min-width: 768px) {}
+
+
+
+/*LAPTOP/DESKTOP*/
+
+@media (min-width: 1024px) {
+
+    /* GLOBAL */
+    h2 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    #navbar a {
+        padding: 20px;
+        font-size: 2vw;
+    }
+
+    /* STYLING AF FORSIDE */
+    .profil-billede {
+        width: 60%;
+        z-index: -1;
+    }
+
+    .projekter-overskrift {
+        margin-bottom: 0%;
+    }
+
+
+
+
+    /* STYLING AF HVEM ER JEG */
+    .hvem-er-jeg {
+        margin-top: 0%;
+        margin-bottom: 10%;
+    }
+
+
+    .hvem-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hvem-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hvem-er-jeg-billede {
+        width: 40%;
+        height: 40%;
+        margin-left: 25%;
+        margin-top: 5%;
+        padding: 0%;
+    }
+
+
+    .hvem-er-jeg-tekst {
+        font-style: italic;
+        position: absolute;
+        padding-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 20%;
+        margin-left: -20%;
+        width: 40%;
+    }
+
+    .hvem-tekst {
+        margin-top: 5%;
+        margin-right: 30%;
+        font-size: 2vw;
+        margin: 10%;
+    }
+
+
+    /* STYLING AF PROJEKTER */
+    
+    /* STYLING AF MYFSTVL */ 
+    
+    .my-flex-computer {
+        display: flex;
+        flex-direction: row;
+        padding: 10%; 
+    }
+
+    .my-computer {
+        width: 30%;
+        height: 30%;
+        margin: -5%;
+    }
+
+    .my-tekst {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .my-flex-mobil {
+        display: none;
+    }
+
+    
+    /* STYLING AF SEAMLESS */
+    .krea-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .seamless-mobil-tekst {
+        display: none;
+    }
+
+    .seamless-tekst-computer {
+        display: block; 
+        margin-top: -20%; 
+        margin-left: -20%; 
+    }
+
+    .krea-flex {
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding: 10%;
+    }
+    
+    .seamless-billede {
+        width: 60%; 
+        height: 60%; 
+    }
+    
+    
+    
+    /* STYLING AF BILLEDER */
+    
+    #billeder {
+        margin-top: 10%; 
+    }
+    
+    .festival-grid {
+        display: flex;
+    }
+
+    .some {
+        width: 50%; 
+         margin-left: auto;
+        margin-right: auto;
+    }
+
+    .some-container {
+        width: 50%;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+
+}
